@@ -14,7 +14,11 @@ class Solution():
                 count=1
         result=result+s[-1]+str(count)
 
-        return result
-    
+        if len(result)>len(s):
+            return s
+        else:
+            return result
+        
+
 obj=Solution()
-print(obj.string_Compression("aaabbccceefff"))
+print(obj.string_Compression("aaaa"))
