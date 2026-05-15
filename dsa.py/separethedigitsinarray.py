@@ -2,14 +2,18 @@
 class Solution():
 
     def separateDigits(self,nums):
+      result = [int("".join(map(str, nums)))]
       L=[]
-      for i in nums:
+      for i in result:
          while i!=0:
-            rev=i%10
-            i=i//10
-            L.append(rev)
+           rev=i%10
+           i=i//10
+           L.append(rev)
+      
+      for j in L:
+         a=L[::-1]
 
-      return L
+      return a
     
 obj=Solution()
-print(obj.separateDigits([13,14,15]))
+print(obj.separateDigits([13,25,83,77]))
