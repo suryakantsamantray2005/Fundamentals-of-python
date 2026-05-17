@@ -11,7 +11,7 @@ class Solution():
             arr[i]=arr[minimum]
             arr[minimum]=temp
 
-        return arr
+        return arr     #the return array will be in increasing order
 
         
 obj=Solution()
