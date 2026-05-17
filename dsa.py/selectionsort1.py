@@ -12,5 +12,7 @@ class Solution:
             arr[maximum]=temp
         return arr
 
+#time complexity is O(N^2)
+#space complexit is O(1)
 obj=Solution()
 print(obj.sorting_in_Decreasing([2,7,9,4,6,0]))

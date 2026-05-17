@@ -12,7 +12,9 @@ class Solution():
             arr[minimum]=temp
 
         return arr     #the return array will be in increasing order
-
+    
+#Here time complexity is O(N^2) because the array traverse for (N(N+1))/2
+#space complexity is O(1) beacuse we only use 5 variable for n array elements
         
 obj=Solution()
 print(obj.sorting([5,7,8,4,1,6,9,2]))
