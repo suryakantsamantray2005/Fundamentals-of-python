@@ -9,7 +9,7 @@ class Solution:
         for ch, word in zip(pattern, words):
             my_dict[ch] = word
 
-        return my_dict
+        return my_dicta
 
 obj = Solution()
 print(obj.wordPattern("abab", "dog cat dog cat"))
