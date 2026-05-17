@@ -1,3 +1,4 @@
+#selection sort
 class Solution():
     def sorting(self,arr):
         for i in range(0,len(arr)-1):   #because last element is already sorted
