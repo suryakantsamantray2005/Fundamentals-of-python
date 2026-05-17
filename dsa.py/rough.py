@@ -1,19 +1,31 @@
-#int to roman
-class Solution():
-    def letterCombinations(self,digits):
-        dict={
-            "2":"abc","3":"def","4":"ghi","5":"jkl","6":"mno","7":"pqrs","8":"tuv","9":"wxyz"
-        }
-        L=[]
-        if len(digits)<=4 and len(digits)>=1:
-            for i in digits:
-                if int(i)>=2 and int(i)<=9:
-                    L.append(dict[str(i)])
-                else:
-                    return []
+class Solution:
+    def merge(self, nums1, m, nums2, n):
 
-                
-              
+        L = []
+
+        for i in range(m):
+            L.append(nums1[i])
+
+        for j in range(n):
+            L.append(nums2[j])
+
+        # Selection Sort
+        for k in range(len(L)-1):
+
+            minimum = k
+
+            for l in range(k+1, len(L)):
+
+                if L[l] < L[minimum]:
+                    minimum = l
+
+            L[k], L[minimum] = L[minimum], L[k]
+
+        # Copy into nums1
+        for i in range(len(L)):
+            nums1[i] = L[i]
+
+        return nums1
 
 obj=Solution()
-print(obj.letterCombinations("239"))
+print(obj.merge([1,2,3,0,0,0],3,[2,5,6],3))
