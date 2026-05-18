@@ -10,6 +10,8 @@ class Solution:
         product=nums[-1]*nums[-2] - nums[0]*nums[1]
 
         return product
+    
+#this has time complexity of O(N logN)
 
 obj=Solution()
-print(obj.maxProductDifference([4,2,5,9,7,4,8]))
+print(obj.maxProductDifference([-10,-9,1,2]))
