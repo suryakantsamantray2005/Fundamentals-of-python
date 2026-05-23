@@ -1,3 +1,4 @@
+#contains duplicate leetcode 217
 class Solution:
     def containsDuplicate(self,nums):
         nums.sort()
