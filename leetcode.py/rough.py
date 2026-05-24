@@ -1,18 +1,12 @@
 class Solution:
+    def missingNumber(self, nums):
 
-    def isPalindrome(self,x):
-        if x>=0:
-            original=x
-            rev=0
-            while x!=0:
-                rev=rev*10+x%10
-                x=x//10
-            if original==rev:
-                return True
-            else:
-                return False
-        else:
-            return False
-        
+        S = set(nums)
+
+        for i in range(len(nums)+1):
+
+            if i not in S:
+                return i
+            
 obj=Solution()
-print(obj.isPalindrome(0))
+print(obj.missingNumber([0,1,3]))
