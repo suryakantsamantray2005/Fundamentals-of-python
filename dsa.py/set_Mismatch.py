@@ -1,4 +1,5 @@
 #set mismatch leetcode no 645
+#time complexity=O(n) space complexity = O(n) 
 class Solution:
     def findErrorNums(self,nums):
         freq={}
@@ -16,3 +17,4 @@ class Solution:
             if j not in S1:
                 L.append(j)
         return L
+#this can be further optimized to O(1) space complexity using the mathematical formula
