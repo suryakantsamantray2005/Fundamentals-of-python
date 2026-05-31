@@ -13,7 +13,9 @@ class Solution:
         for key,value in freq.items():
             buckets[value].append(key)     
         for l in range(len(nums),-1,-1):
-             L.extend(buckets[l])
+             L.extend(buckets[l])   #here extend use instead of append because extend add one by one 
+                                    #element while append add whole array into a single element.
+                                    # also extend did not add empty element 
 
         return L[0:k]
 
