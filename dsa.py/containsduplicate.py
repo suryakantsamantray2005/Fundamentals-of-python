@@ -11,6 +11,7 @@ class Solution:
                 nums[i]=nums[j]
 
         return i+1
+# time complexity - O(n) and space complexity - O(1)
 
 obj=Solution()
 print(obj.removeDuplicates([0,0,1,1,1,2,2,3,3,4]))
