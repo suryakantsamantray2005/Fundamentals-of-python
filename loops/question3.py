@@ -1,4 +1,5 @@
 #taking input of 3 angles from the user and find whether it can form a triangle or not
+
 #taking input of 3 angles from the user
 a=int(input('enter the first angle(in degrees) '))
 b=int(input('enter the second angle(in degrees) '))

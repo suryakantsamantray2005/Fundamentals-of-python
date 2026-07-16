@@ -1,0 +1,22 @@
+# finding the peak element leetcode 162
+class Solution:
+    def findPeakElement(self,arr):
+        if len(arr)==1:
+            return 0
+        if arr[0]>arr[1]:
+            return 0
+        if arr[-1]>arr[-2]:
+            return len(arr)-1
+        low=1
+        high=len(arr)-2
+        while low<=high:
+            mid=(low+high)//2
+            if arr[mid]>arr[mid-1] and arr[mid]>arr[mid+1]:
+                return mid
+            elif arr[mid]>arr[mid-1] and arr[mid]<arr[mid+1]:
+                low=mid+1
+            else:
+                 high=mid-1
+# time complexity - O(logn) and space complexity - O(1)
+obj=Solution()
+print(obj.findPeakElement([2,1]))
