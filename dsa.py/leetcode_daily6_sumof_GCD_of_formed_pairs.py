@@ -22,6 +22,6 @@ class Solution:
         while b!=0:
             a,b=b,a%b
         return a
-# time complexity - O(nlogn) and space complexity - O(1)
+# time complexity - O(nlogn) and space complexity - O(n)
 obj=Solution()
 print(obj.gcdSum([3,6,2,8]))
